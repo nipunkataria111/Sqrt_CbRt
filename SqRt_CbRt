@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class mult_div {
+		public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println(" @Author: Nipun Kataria"); 
+		System.out.println(" Welcome !"); 
+		System.out.println("");
+		System.out.println("Enter the First Value");     
+		 double measured1 = keyboard.nextDouble();
+		 System.out.println("Enter the First Error Value");       
+		 double err1 = keyboard.nextDouble();
+		
+		 System.out.println("");
+		 
+		 System.out.println("Square");		
+		 double SqRt = Math.abs(measured1);
+		 double ValueSEF =  err1 / SqRt;  
+		 double SZ = Math.abs(ValueSEF);
+		 double SPower = (measured1 * measured1) ;
+		 double SResult = (2*SPower*SZ);
+		 System.out.println(SResult + " ± "  + ValueSEF);  
+		 		
+		 System.out.println("Cube");		
+		 double CbRt = Math.abs(measured1);
+		 double ValueCEF =  err1 / CbRt;  
+		 double CZ = Math.abs(ValueCEF);
+		 double CPower = (measured1 * measured1* measured1) ;
+		 double CResult = (3*CPower*CZ);
+		 System.out.println(CResult + " ± "  + ValueCEF);  
+	}
+	}
+
